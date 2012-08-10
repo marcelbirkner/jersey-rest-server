@@ -6,7 +6,7 @@ You can run the RESTful Server using <b>jetty:run</b>. After that you can use cu
 
 <h3>Ping Service </h3>
 
-1.Request
+1.Request: Plain Text
 ```
 curl -I http://localhost:8080/server-example/rest/ping/ -H'Accept:text/plain' 
 ```
@@ -19,7 +19,7 @@ Content-Type: text/plain
 Server: Jetty(6.1.26)
 ```
 
-2.Request
+2.Request: XML
 ```
 curl -I http://localhost:8080/server-example/rest/ping/ -H'Accept:text/xml' 
 ```
@@ -32,7 +32,7 @@ Content-Type: text/xml
 Server: Jetty(6.1.26)
 ```
 
-3.Request
+3.Request: HTML
 ```
 curl -I http://localhost:8080/server-example/rest/ping/ -H'Accept:text/html' 
 ```
@@ -45,7 +45,7 @@ Content-Type: text/html
 Server: Jetty(6.1.26)
 ```
 
-4.Request
+4.Request: Plain Text
 ```
 curl http://localhost:8080/server-example/rest/ping/ -H'Accept:text/plain' 
 ```
@@ -55,7 +55,7 @@ curl http://localhost:8080/server-example/rest/ping/ -H'Accept:text/plain'
 Ping: System OK
 ```
 
-5.Request
+5.Request: XML
 ```
 curl http://localhost:8080/server-example/rest/ping/ -H'Accept:text/xml' 
 ```
@@ -65,7 +65,7 @@ curl http://localhost:8080/server-example/rest/ping/ -H'Accept:text/xml'
 <?xml version="1.0"?><ping>Ping: System OK</ping>
 ```
 
-6.Request
+6.Request: HTML
 ```
 curl http://localhost:8080/server-example/rest/ping/ -H'Accept:text/html' 
 ```
@@ -77,7 +77,7 @@ curl http://localhost:8080/server-example/rest/ping/ -H'Accept:text/html'
 
 <h4>Customer Service</h4>
 
-7.Request
+7.Request: Get Customer with Id 11 (does not exist in test data)
 ```
 curl http://localhost:8080/server-example/rest/customers/11
 ```
@@ -101,4 +101,18 @@ Cache-Control: must-revalidate,no-cache,no-store
 Server: Jetty(6.1.26)
 ```
 
+9.Request: Get existing Customer
+```
+curl  http://localhost:8080/server-example/rest/customers/1
+```
 
+9.Response
+```
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customer>
+  <customerId>1</customerId>
+  <dateOfBirth>2012-08-10T16:14:05.526+02:00</dateOfBirth>
+  <firstName>firstName-1</firstName>
+  <lastName>lastName-1</lastName>
+</customer>
+```
