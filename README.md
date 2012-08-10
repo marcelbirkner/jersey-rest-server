@@ -2,7 +2,9 @@
 
 You can run the RESTful Server using <b>jetty:run</b>. After that you can use curl or your browser to test the different services.
 
-<h3>Manual tests with curl</h3>
+<h2>Manual tests with curl</h2>
+
+<h3>Ping Service </h3>
 
 1.Request
 ```
