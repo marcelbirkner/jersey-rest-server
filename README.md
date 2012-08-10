@@ -51,6 +51,7 @@ curl http://localhost:8080/server-example/rest/ping/ -H'Accept:text/plain'
 4.Response
 ```
 Ping: System OK
+```
 
 5.Request
 ```
