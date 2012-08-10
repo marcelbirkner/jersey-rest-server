@@ -4,12 +4,12 @@ You can run the RESTful Server using <b>jetty:run</b>. After that you can use cu
 
 <h3>Manual tests with curl</h3>
 
-Request:
+1. Request:
 ```
 curl -I http://localhost:8080/server-example/rest/ping/ -H'Accept:text/plain' 
 ```
 
-Response
+1. Response
 ```
 HTTP/1.1 200 OK
 Content-Length: 0
@@ -17,12 +17,12 @@ Content-Type: text/plain
 Server: Jetty(6.1.26)
 ```
 
-Request:
+2. Request:
 ```
 curl -I http://localhost:8080/server-example/rest/ping/ -H'Accept:text/xml' 
 ```
 
-Response
+2. Response
 ```
 HTTP/1.1 200 OK
 Content-Length: 0
@@ -31,12 +31,12 @@ Server: Jetty(6.1.26)
 ```
 
 
-Request:
+3. Request:
 ```
 curl -I http://localhost:8080/server-example/rest/ping/ -H'Accept:text/html' 
 ```
 
-Response
+3. Response
 ```
 HTTP/1.1 200 OK
 Content-Length: 0
@@ -46,55 +46,55 @@ Server: Jetty(6.1.26)
 
 
 
-Request:
+4. Request:
 ```
 curl http://localhost:8080/server-example/rest/ping/ -H'Accept:text/plain' 
 ```
 
-Response
+4. Response
 ```
 Ping: System OK
 
-Request:
+5. Request:
 ```
 curl http://localhost:8080/server-example/rest/ping/ -H'Accept:text/xml' 
 ```
 
-Response
+5. Response
 ```
 <?xml version="1.0"?><ping>Ping: System OK</ping>
 ```
 
 
 
-Request:
+6. Request:
 ```
 curl http://localhost:8080/server-example/rest/ping/ -H'Accept:text/html' 
 ```
 
-Response
+6. Response
 ```
 <html><title>Ping: System OK</title><body><h1>Ping: System OK</h1></body></html> 
 ```
 
 <h4>Customer Service</h4>
 
-Request:
+7. Request:
 ```
 curl http://localhost:8080/server-example/rest/customers/11
 ```
 
-Response
+7. Response
 ```
 Customer, 11, is not found
 ```
 
-Request:
+8. Request:
 ```
 curl -I http://localhost:8080/server-example/rest/customers/11
 ```
 
-Response
+8. Response
 ```
 HTTP/1.1 404 Not Found
 Content-Length: 1397
