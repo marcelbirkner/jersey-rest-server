@@ -4,12 +4,12 @@ You can run the RESTful Server using <b>jetty:run</b>. After that you can use cu
 
 <h3>Manual tests with curl</h3>
 
-1. Request:
+1.Request:
 ```
 curl -I http://localhost:8080/server-example/rest/ping/ -H'Accept:text/plain' 
 ```
 
-1. Response
+1.Response
 ```
 HTTP/1.1 200 OK
 Content-Length: 0
