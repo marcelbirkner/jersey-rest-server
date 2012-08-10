@@ -2,6 +2,13 @@
 
 You can run the RESTful Server using <b>jetty:run</b>. After that you can use curl or your browser to test the different services.
 
+<h2>Technologies used</h2>
+
+- Maven 3 (Build tool) 
+- Java 6
+- Jersey 6 (JAX-RS)
+- Jetty 6 (Server)
+
 <h2>Manual tests with curl</h2>
 
 Here are a couple of test cases you can try locally on your maschine. All you need is a  <b>shell</b> with <b>curl</b> installed.
