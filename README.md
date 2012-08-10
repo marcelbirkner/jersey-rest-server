@@ -4,6 +4,8 @@ You can run the RESTful Server using <b>jetty:run</b>. After that you can use cu
 
 <h2>Manual tests with curl</h2>
 
+Here are a couple of test cases you can try locally on your maschine. All you need is a  <b>shell</b> with <b>curl</b> installed.
+
 <h3>Ping Service </h3>
 
 1.Request: Plain Text
