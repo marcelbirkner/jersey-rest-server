@@ -4,7 +4,7 @@ You can run the RESTful Server using <b>jetty:run</b>. After that you can use cu
 
 <h2>Technologies used</h2>
 
-- Maven 3 (Build tool) 
+- Maven 2.2.1 (Build tool) 
 - Java 6
 - Jersey 6 (JAX-RS)
 - Jetty 6 (Server)
