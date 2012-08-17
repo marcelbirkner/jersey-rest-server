@@ -1,3 +1,5 @@
+[![Build Status](https://buildhive.cloudbees.com/job/marcelbirkner/job/jersey-rest-server/badge/icon)](https://buildhive.cloudbees.com/job/marcelbirkner/job/jersey-rest-server/)
+
 <h2>Start Server</h2>
 
 You can run the RESTful Server using <b>jetty:run</b>. After that you can use curl or your browser to test the different services.
