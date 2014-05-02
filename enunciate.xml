@@ -1,0 +1,22 @@
+<enunciate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://enunciate.codehaus.org/schemas/enunciate-1.28.xsd">
+
+	<namespaces>
+		<namespace id="api"
+			uri="https://github.com/marcelbirkner/jersey-rest-server" />
+		<namespace id="customer"
+			uri="https://github.com/marcelbirkner/jersey-rest-server/customer" />
+		<namespace id="ping"
+			uri="https://github.com/marcelbirkner/jersey-rest-server/ping" />
+		<namespace id="status"
+			uri="https://github.com/marcelbirkner/jersey-rest-server/status" />
+		<namespace id="user"
+			uri="https://github.com/marcelbirkner/jersey-rest-server/user" />
+	</namespaces>
+
+	<modules>
+		<spring-app disabled="true" />
+		<docs docsDir="/" includeExampleXml="false" splashPackage="de.mb.rest.service"
+			title="Jersey REST Web Service API" copyright="Marcel Birkner" />
+	</modules>
+</enunciate>
