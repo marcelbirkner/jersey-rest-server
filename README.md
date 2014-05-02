@@ -1,6 +1,20 @@
 [![Build Status](https://buildhive.cloudbees.com/job/marcelbirkner/job/jersey-rest-server/badge/icon)](https://buildhive.cloudbees.com/job/marcelbirkner/job/jersey-rest-server/)
 
-<h2>Start Server</h2>
+<h2>Enunciate Integration</h2>
+
+To automatically document the REST endpoints and the data model, i added Enunciate from Codehaus to the maven configuration. 
+In order to generate and view the Enunciate documentation follow these steps. Enunicate parses the JAX-WS/RS annotation and JavaDoc 
+to generate the REST API. This way you keep the documentation and source code in one location.
+
+```
+mvn install
+mvn jetty:run-exploded
+```
+
+You can find the Enunciate under: http://localhost:8080/server-example/
+
+
+<h1>REST Server</h1>
 
 You can run the RESTful Server using <b>jetty:run</b>. After that you can use curl or your browser to test the different services.
 
