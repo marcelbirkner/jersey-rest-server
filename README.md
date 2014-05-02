@@ -35,7 +35,7 @@ You can find the Enunciate under: http://localhost:8080/server-example/
 
 ## Enunciate Screenshots
 
-![Enunciate Startpage](https://github.com/marcelbirkner/jersey-rest-server/blob/master/screenshots/1-Startpage.png)
+![Enunciate Startpage](https://raw.githubusercontent.com/marcelbirkner/jersey-rest-server/master/screenshots/1-Startpage.png)
 ![Enunciate User Service](https://github.com/marcelbirkner/jersey-rest-server/blob/master/screenshots/2-UserService.png)
 ![Enunciate User JSON](https://github.com/marcelbirkner/jersey-rest-server/blob/master/screenshots/3-User-json.png)
 ![Enunciate User Details](https://github.com/marcelbirkner/jersey-rest-server/blob/master/screenshots/4-User-details.png)
