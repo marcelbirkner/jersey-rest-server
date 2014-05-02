@@ -38,6 +38,10 @@ You can find the Enunciate under: http://localhost:8080/server-example/
 
 You can run the RESTful Server using <b>jetty:run</b>. After that you can use curl or your browser to test the different services.
 
+## Automatic smoketests
+
+Use *smoketests/run-smoketests.sh* to execute a list of smoketests, against the REST Services.
+
 ## Manual tests with curl
 
 Here are a couple of test cases you can try locally on your maschine. All you need is a  <b>shell</b> with <b>curl</b> installed.
