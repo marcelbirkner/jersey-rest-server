@@ -1,4 +1,4 @@
-package de.mb.rest.server.service;
+package de.mb.rest.service.customer;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -16,7 +16,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.xml.bind.JAXBElement;
 
-import de.mb.rest.server.domain.Customer;
+import de.mb.rest.service.exceptions.NotFoundException;
 
 @Path("/customers")
 public class CustomerService {

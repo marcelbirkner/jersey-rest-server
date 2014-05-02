@@ -1,4 +1,4 @@
-package de.mb.rest.server.service;
+package de.mb.rest.service.ping;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -10,11 +10,6 @@ public class PingService {
 
 	private String returnValue = "Ping: System OK";
 
-	/**
-	 * http://localhost:8080/server-example/rest/ping/
-	 * 
-	 * @return
-	 */
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String ping() {

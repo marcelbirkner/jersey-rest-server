@@ -1,4 +1,4 @@
-package de.mb.rest.server.service;
+package de.mb.rest.service.exceptions;
 
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.Response;

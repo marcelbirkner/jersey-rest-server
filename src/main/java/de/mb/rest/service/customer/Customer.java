@@ -1,4 +1,4 @@
-package de.mb.rest.server.domain;
+package de.mb.rest.service.customer;
 
 import java.util.Date;
 
