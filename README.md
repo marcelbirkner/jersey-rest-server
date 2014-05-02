@@ -40,6 +40,12 @@ You can find the Enunciate under: http://localhost:8080/server-example/
 ![Enunciate User JSON](https://github.com/marcelbirkner/jersey-rest-server/blob/master/screenshots/3-User-json.png)
 ![Enunciate User Details](https://github.com/marcelbirkner/jersey-rest-server/blob/master/screenshots/4-User-details.png)
 
+![](screenshots/1-Startpage.png?raw=true)
+![](screenshots/2-UserService.png?raw=true)
+![](screenshots/3-User-json.png?raw=true)
+![](screenshots/4-User-details.png?raw=true)
+
+<img src="screenshots/1-Startpage.png?raw=true" />
 
 # REST Server
 
