@@ -1,5 +1,25 @@
 [![Build Status](https://buildhive.cloudbees.com/job/marcelbirkner/job/jersey-rest-server/badge/icon)](https://buildhive.cloudbees.com/job/marcelbirkner/job/jersey-rest-server/)
 
+# Overview
+
+This Github project contains examples, how to create annotated REST Services. The following examples are provided:
+
+- HTTP Methods used: @GET, @POST, @PUT, @DELETE
+- MediaType: Application/JSON
+- Path configuration: @Path
+
+The REST Services are automatically documented using Enunciate (http://enunciate.codehaus.org/). 
+This has the advantage to keep the source code and documentation
+
+## Technologies used
+
+- Maven 2.2.1 (Build tool) 
+- Java 1.7
+- Jersey 6 (JAX-RS)
+- Jetty 6 (Server)
+- Enunciate 1.28 (API Documentation)
+
+
 <h2>Enunciate Integration</h2>
 
 To automatically document the REST endpoints and the data model, i added Enunciate from Codehaus to the maven configuration. 
@@ -17,13 +37,6 @@ You can find the Enunciate under: http://localhost:8080/server-example/
 <h1>REST Server</h1>
 
 You can run the RESTful Server using <b>jetty:run</b>. After that you can use curl or your browser to test the different services.
-
-<h2>Technologies used</h2>
-
-- Maven 2.2.1 (Build tool) 
-- Java 1.7
-- Jersey 6 (JAX-RS)
-- Jetty 6 (Server)
 
 <h2>Manual tests with curl</h2>
 
