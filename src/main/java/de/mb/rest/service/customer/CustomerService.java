@@ -31,6 +31,12 @@ public class CustomerService {
 			c.setFirstName("firstName-"+i);
 			c.setLastName("lastName-"+i);
 			c.setDateOfBirth( new Date() );
+			Address address = new Address();
+			address.setCity("Toronto");
+			address.setCountry("Canada");
+			address.setHouseNumber("42");
+			address.setStreet("Young Street");
+			c.setAddress(address);
 			model.put(new Long( i ), c );
 		}
 	}

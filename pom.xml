@@ -5,7 +5,7 @@
 	<groupId>de.mb.rest</groupId>
 	<artifactId>server-example</artifactId>
 	<version>1.0</version>
-	<name>Jersey REST Server Example</name>
+	<name>Jersey, Jetty RESTful Server Example</name>
 	<packaging>war</packaging>
 
 	<prerequisites>
@@ -22,19 +22,16 @@
 			<artifactId>jersey-server</artifactId>
 			<version>${jersey.version}</version>
 		</dependency>
-
 		<dependency>
 			<groupId>com.sun.jersey</groupId>
 			<artifactId>jersey-json</artifactId>
 			<version>${jersey.version}</version>
 		</dependency>
-
 		<dependency>
 			<groupId>com.sun.jersey.contribs</groupId>
 			<artifactId>jersey-spring</artifactId>
 			<version>${jersey.version}</version>
 		</dependency>
-
 
 		<dependency>
 			<groupId>org.codehaus.enunciate</groupId>
@@ -48,6 +45,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
 				<configuration>
 					<source>1.6</source>
 					<target>1.6</target>
@@ -66,6 +64,7 @@
 			<plugin>
 				<groupId>org.codehaus.enunciate</groupId>
 				<artifactId>maven-enunciate-plugin</artifactId>
+				<version>1.28</version>
 				<configuration>
 					<configFile>enunciate.xml</configFile>
 				</configuration>

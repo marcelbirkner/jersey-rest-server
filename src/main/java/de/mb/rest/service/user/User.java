@@ -6,26 +6,29 @@ import java.util.UUID;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * User Object
+ * User object
  * 
  * @author marcel.birkner
  *
  */
 @XmlRootElement
 public class User {
+	
 	private String id;
 	private String firstName;
 	private String lastName;
-	private Date dateOfBirth;
+	private String email;
+	private Date created;
 	
 	public User() {
 	}
 	
-	public User(String firstName, String lastName, Date dob) {
+	public User(String firstName, String lastName, String email, Date created) {
 		this.setId(UUID.randomUUID().toString());
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.dateOfBirth = dob;
+		this.email = email;
+		this.setCreated(created);
 	}
 	/**
 	 * First name of user
@@ -48,16 +51,6 @@ public class User {
 		this.lastName = lastName;
 	}
 	/**
-	 * Date of birth of user
-	 * @return date of birth
-	 */
-	public Date getDateOfBirth() {
-		return dateOfBirth;
-	}
-	public void setDateOfBirth(Date dateOfBirth) {
-		this.dateOfBirth = dateOfBirth;
-	}
-	/**
 	 * Unique user id
 	 * @return user id
 	 */
@@ -66,5 +59,34 @@ public class User {
 	}
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	/**
+	 * Email address of user, i.e. mike.smith@company.com
+	 * @return email
+	 */
+	public String getEmail() {
+		return email;
+	}
+	/**
+	 * @param email the email to set
+	 */
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	/**
+	 * Creation time of the user account
+	 * @return creation date
+	 */
+	public Date getCreated() {
+		return created;
+	}
+
+	/**
+	 * @param created creation date to set
+	 */
+	public void setCreated(Date created) {
+		this.created = created;
 	}
 }

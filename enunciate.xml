@@ -17,6 +17,6 @@
 	<modules>
 		<spring-app disabled="true" />
 		<docs docsDir="/" includeExampleXml="false" splashPackage="de.mb.rest.service"
-			title="Jersey REST Web Service API" copyright="Marcel Birkner" />
+			title="Jersey, Jetty RESTful Web Service API" copyright="Marcel Birkner" />
 	</modules>
 </enunciate>

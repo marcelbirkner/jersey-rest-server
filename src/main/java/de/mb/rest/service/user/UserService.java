@@ -15,8 +15,6 @@ import javax.ws.rs.core.MediaType;
 
 import de.mb.rest.service.exceptions.NotFoundException;
 
-
-
 /**
  * The User service allows to manage all users
  * 
@@ -30,11 +28,11 @@ public class UserService {
 	private static List<User> modelList = new ArrayList<User>();
 
 	static {
-		modelList.add(new User("Bart", "Simpson", new Date()));
-		modelList.add(new User("Marge", "Simpson", new Date()));
-		modelList.add(new User("Homer", "Simpson", new Date()));
-		modelList.add(new User("Lisa", "Simpson", new Date()));
-		modelList.add(new User("Maggie", "Simpson", new Date()));
+		modelList.add(new User("Bart", "Simpson", "bart.simpson@simpsons.com", new Date()));
+		modelList.add(new User("Marge", "Simpson", "marge.simpson@simpsons.com", new Date()));
+		modelList.add(new User("Homer", "Simpson", "homer.simpson@simpsons.com", new Date()));
+		modelList.add(new User("Lisa", "Simpson", "lisa.simpson@simpsons.com", new Date()));
+		modelList.add(new User("Maggie", "Simpson", "maggie.simpson@simpsons.com", new Date()));
 	}
 
 	/**
@@ -77,5 +75,4 @@ public class UserService {
 		users.setUsers(modelList);
 		return users;
 	}
-
 }
