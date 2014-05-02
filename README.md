@@ -11,6 +11,28 @@ This Github project contains examples, how to create annotated REST Services. Th
 The REST Services are automatically documented using Enunciate (http://enunciate.codehaus.org/). 
 This has the advantage to keep the source code and documentation
 
+## Examples
+
+
+Get User:
+ 
+```
+@GET
+@Path("/{userId}")
+public User getUserById(@PathParam("userId") String userId) {
+	...
+}
+```
+
+Create User: 
+
+```
+@POST
+public User createUser(User user) {
+	...
+}
+```
+	
 ## Technologies used
 
 - Maven 2.2.1 (Build tool) 
