@@ -20,7 +20,7 @@ This has the advantage to keep the source code and documentation
 - Enunciate 1.28 (API Documentation)
 
 
-<h2>Enunciate Integration</h2>
+# Enunciate Integration
 
 To automatically document the REST endpoints and the data model, i added Enunciate from Codehaus to the maven configuration. 
 In order to generate and view the Enunciate documentation follow these steps. Enunicate parses the JAX-WS/RS annotation and JavaDoc 
@@ -34,15 +34,15 @@ mvn jetty:run-exploded
 You can find the Enunciate under: http://localhost:8080/server-example/
 
 
-<h1>REST Server</h1>
+# REST Server
 
 You can run the RESTful Server using <b>jetty:run</b>. After that you can use curl or your browser to test the different services.
 
-<h2>Manual tests with curl</h2>
+## Manual tests with curl
 
 Here are a couple of test cases you can try locally on your maschine. All you need is a  <b>shell</b> with <b>curl</b> installed.
 
-<h3>Ping Service </h3>
+### Ping Service
 
 1. Request: Plain Text
 ```
