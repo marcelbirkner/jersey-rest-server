@@ -35,10 +35,10 @@ You can find the Enunciate under: http://localhost:8080/server-example/
 
 ## Enunciate Screenshots
 
-<img src="screenshots/1-Startpage.png?raw=true" width="200px"/>
-<img src="screenshots/2-UserService.png?raw=true" width="200px"/>
-<img src="screenshots/3-User-json.png?raw=true" width="200px"/>
-<img src="screenshots/4-User-details.png?raw=true" width="200px"/>
+<img src="screenshots/1-Startpage.png?raw=true" width="250px"/>
+<img src="screenshots/2-UserService.png?raw=true" width="250px"/><br>
+<img src="screenshots/3-User-json.png?raw=true" width="250px"/>
+<img src="screenshots/4-User-details.png?raw=true" width="250px"/>
 
 # REST Server
 
