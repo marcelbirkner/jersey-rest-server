@@ -11,26 +11,27 @@ This Github project contains examples, how to create annotated REST Services. Th
 The REST Services are automatically documented using Enunciate (http://enunciate.codehaus.org/). 
 This has the advantage to keep the source code and documentation
 
-## Examples
+## Example
 
-
-Get User:
  
 ```
-@GET
-@Path("/{userId}")
-public User getUserById(@PathParam("userId") String userId) {
-	...
-}
-```
+@Path("/user")
+@Produces(MediaType.APPLICATION_JSON)
+@Consumes(MediaType.APPLICATION_JSON)
+public class UserService {
 
-Create User: 
-
-```
-@POST
-public User createUser(User user) {
 	...
-}
+
+	@GET
+	@Path("/{userId}")
+	public User getUserById(@PathParam("userId") String userId) {
+		...
+	}
+
+	@POST
+	public User createUser(User user) {
+		...
+	}
 ```
 	
 ## Technologies used
