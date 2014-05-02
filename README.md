@@ -44,7 +44,7 @@ Here are a couple of test cases you can try locally on your maschine. All you ne
 
 ### Ping Service
 
-1. Request: Plain Text
+*1. Request: Plain Text*
 ```
 curl -I http://localhost:8080/server-example/rest/ping/ -H'Accept:text/plain' 
 ```
