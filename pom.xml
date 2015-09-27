@@ -33,12 +33,6 @@
 			<artifactId>jersey-spring</artifactId>
 			<version>${jersey.version}</version>
 		</dependency>
-
-		<dependency>
-			<groupId>org.codehaus.enunciate</groupId>
-			<artifactId>enunciate-rt</artifactId>
-			<version>${enunciate.version}</version>
-		</dependency>
 	</dependencies>
 
 	<build>
@@ -61,21 +55,6 @@
 					<stopKey>stop</stopKey>
 					<stopPort>9966</stopPort>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.enunciate</groupId>
-				<artifactId>maven-enunciate-plugin</artifactId>
-				<version>${enunciate.version}</version>
-				<configuration>
-					<configFile>enunciate.xml</configFile>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>assemble</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
