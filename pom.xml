@@ -13,7 +13,7 @@
 	</prerequisites>
 
 	<properties>
-		<jersey.version>1.13</jersey.version>
+		<jersey.version>1.18</jersey.version>
 		<enunciate.version>1.30.1</enunciate.version>
 	</properties>
 
